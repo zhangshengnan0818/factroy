@@ -19,6 +19,15 @@
   <link rel="stylesheet" href="css/iconfont.css"/>
   <link rel="stylesheet" href="css/person.css"/>
   <title>报废</title>
+  <style>
+    .slide a.slideUp {
+      width: 60%;
+    }
+
+    #countType {
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 <p class="header">
@@ -30,7 +39,7 @@
 
 <div class="perList main">
   <div class="slide">
-    <a href="javascript:;" class="slideUp">大类小类</a>
+    <a href="javascript:;" class="slideUp">大类小类 <i class="iconfont icon-down"></i></a>
     <span class="fr" id="countType">数量：200</span>
   </div>
   <table>
@@ -62,8 +71,13 @@
 </div>
 <script src="js/jquery-1.11.3.js"></script>
 <script>
-  $('.addBtn').click(function(){
-    var html=`<div class="proItem">
+  $('.slide').on('click','slideUp',function(){
+    $('.slideList').slideUp();
+  });
+</script>
+<script>
+  $('.addBtn').click(function () {
+    var html = `<div class="proItem">
     <label for="0" class="slideUp">请选择类别</label>
     <a href="personDetail.html?" class="fr">详情<i class="iconfont icon-right"></i></a>
     <input id="0" name="0" type="number" class="fr" placeholder="输入数量"/>
