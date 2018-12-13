@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/common.css"/>
   <link rel="stylesheet" href="css/iconfont.css"/>
   <link rel="stylesheet" href="css/person.css"/>
-  <title>详情</title>
+  <title>报废</title>
 </head>
 <body>
 <p class="header">
@@ -29,35 +29,28 @@
 </p>
 
 <div class="perList main">
-  <div class="sum">
-   <div>
-     <label for="countAll">总数量</label><input id="countAll" name="countAll" type="number" placeholder="输入数量"/>
-   </div>
-    <div>
-      <label for="residue">未分配</label><input id="residue" name="residue" type="number" placeholder="输入数量"/>
-    </div>
+  <div class="slide">
+    <a href="javascript:;" class="slideUp">大类小类</a>
+    <span class="fr" id="countType">数量：200</span>
   </div>
-    <table>
-      <thead>
-      <tr>
-        <th></th>
-        <th>生产</th>
-        <th>报废</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>张菲菲</td>
-        <td><input name="1" type="number" placeholder="输入数量"/></td>
-        <td><input name="1" type="number" placeholder="输入数量"/></td>
-      </tr>
-      <tr>
-        <td>欧阳菲菲</td>
-        <td><input name="1" type="number" placeholder="输入数量"/></td>
-        <td><input name="1" type="number" placeholder="输入数量"/></td>
-      </tr>
-      </tbody>
-    </table>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>报废</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>张菲菲</td>
+      <td><input name="1" type="number" placeholder="输入数量"/></td>
+    </tr>
+    <tr>
+      <td>欧阳菲菲</td>
+      <td><input name="1" type="number" placeholder="输入数量"/></td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 <div class="footer">
   <a href="javascript:;" class="addBtn">
