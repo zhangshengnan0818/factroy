@@ -1,0 +1,360 @@
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c12926;
+  box-shadow: 0 -1px 10px 0 #333;
+}
+.footer .footItem {
+  flex: auto;
+  text-align: center;
+  height: 48px;
+}
+.footer .footItem a {
+  display: inline-block;
+  color: #ffd80e;
+  height: 100%;
+  width: 100%;
+}
+.footer .footItem a.active {
+  color: #c12926;
+  background-color: #ffd80e;
+}
+.footer .footItem a i {
+  font-size: 20px;
+}
+.footer .footItem a p {
+  font-size: 12px;
+  margin-top: -5px;
+}
+.modal {
+  display: none;
+  z-index: 60;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  margin: 0 0 0 -40vw;
+}
+.modal p {
+  line-height: 40px;
+}
+.modal .modalHead {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.modal .modalHead p {
+  font-size: 20px;
+}
+.modal .modalBody {
+  padding: 10px 0;
+}
+.telM {
+  height: 180px;
+  margin-top: -90px;
+}
+.telM .telHead {
+  background-color: #E4393C;
+}
+.telM .telBody {
+  background-color: #fff;
+}
+.telM .telBody p {
+  margin: 0 20px;
+  font-size: 12px;
+}
+.telM .telBody p:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+.telM .telBody p i {
+  font-size: 18px;
+  margin: 10px;
+  padding: 0 20px 0 0;
+  border-right: 1px solid #f16e50;
+}
+.telM .telBody p a {
+  color: #333;
+}
+.joinM {
+  display: none;
+  height: 459px;
+  margin-top: -229.5px;
+}
+.joinM .joinHead {
+  background-color: #ff2e4d;
+}
+.joinM .joinBody {
+  background-color: #fff;
+  padding: 20px;
+}
+.joinM .joinBody p {
+  text-align: left;
+}
+.joinM .joinBody p.count {
+  text-align: center;
+}
+.joinM .joinBody p.count input {
+  width: 30%;
+}
+.joinM .joinBody p.count i {
+  padding: 0;
+  background-color: #565656;
+  color: #fff;
+  border-radius: 50%;
+}
+.joinM .joinBody p select {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-color: #a9a9a9;
+}
+.joinM .joinBody p i {
+  vertical-align: middle;
+  font-size: 20px;
+  background-color: #ff2e4d;
+  color: #ffd80e;
+  padding: 5px;
+}
+.joinM .joinBody p input {
+  border: 0;
+  width: 84%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f5f5f5;
+}
+.joinM .joinBody p input::-webkit-input-placeholder {
+  color: #ff2e4d;
+}
+.joinM .joinBody p input:-ms-input-placeholder {
+  color: #ff2e4d;
+}
+.joinM .joinFoot {
+  padding: 5px 0;
+  background-color: #ff2e4d;
+}
+.joinM .joinFoot p {
+  text-align: center;
+}
+.joinM .joinFoot p a {
+  display: inline-block;
+  color: #565656;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ffd80e;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+/*付款方式*/
+.paylist {
+  display: none;
+  z-index: 60;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40vh;
+}
+.paylist h2 {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 10px;
+}
+.paylist dl dt {
+  height: 40px;
+  line-height: 40px;
+  margin: 0 20px;
+}
+.paylist dl dt:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+.paylist dl ul {
+  display: none;
+  background-color: #f5f5f5;
+}
+.paylist dl ul li {
+  text-align: center;
+  color: #666;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  margin: 0 20px;
+}
+.paylist dl ul li :not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.paylist dl ul li p {
+  overflow: hidden;
+}
+.paylist dl ul li p span {
+  width: 38%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.paylist dl ul li p span:first-child {
+  text-align: left;
+  width: 20%;
+}
+.paylist a {
+  display: inline-block;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+}
+.paylist a i {
+  margin: 0 5px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.paylist .payWay {
+  border-top: 10px solid #f5f5f5;
+  padding: 0 20px;
+}
+.sideBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20%;
+  z-index: 40;
+}
+.sideBtn p {
+  width: 13px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.sideBtn p a {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+}
+.hisM {
+  z-index: 70;
+  height: 500px;
+  margin-top: -250px;
+}
+.hisM .hisHead {
+  background-color: #ff2e4d;
+}
+.hisM .hisBody {
+  background-color: #fff;
+  padding: 10px 20px;
+  min-height: 300px;
+  max-height: 410px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.hisM .hisBody li {
+  line-height: 30px;
+}
+.hisM .hisBody li:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+.hisM .hisBody li span {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hisM .hisBody li span:first-child {
+  width: 55%;
+}
+.hisM .hisBody li span:last-child {
+  width: 40%;
+  color: #999;
+}
+.hisM .hisFoot {
+  padding: 5px 0;
+  background-color: #ff2e4d;
+}
+.hisM .hisFoot p {
+  text-align: center;
+}
+.hisM .hisFoot p a {
+  display: inline-block;
+  color: #565656;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ffd80e;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.tiM {
+  z-index: 70;
+  display: none;
+  height: 170px;
+  margin-top: -85px;
+}
+.tiM .tiHead {
+  background-color: #ff2e4d;
+}
+.tiM .tiBody {
+  background-color: #fff;
+  padding: 20px;
+}
+.tiM .tiBody p {
+  text-align: left;
+}
+.tiM .tiBody p i {
+  vertical-align: middle;
+  font-size: 20px;
+  background-color: #ff2e4d;
+  color: #ffd80e;
+  padding: 5px;
+}
+.tiM .tiBody p input {
+  border: 0;
+  width: 84%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f5f5f5;
+}
+.tiM .tiBody p input::-webkit-input-placeholder {
+  color: #ff2e4d;
+}
+.tiM .tiBody p input:-ms-input-placeholder {
+  color: #ff2e4d;
+}
+.tiM .tiFoot {
+  padding: 5px 0;
+  background-color: #ff2e4d;
+}
+.tiM .tiFoot p {
+  text-align: center;
+}
+.tiM .tiFoot p a {
+  display: inline-block;
+  color: #565656;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ffd80e;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.ret {
+  color: #E4393C;
+}
+.gart {
+  color: #999;
+  font-size: 12px;
+}
+.gret {
+  color: #62b900;
+}
+.orgt {
+  color: #ff6600;
+}

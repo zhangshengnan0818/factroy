@@ -1,0 +1,308 @@
+.footer{
+  display: flex;
+  position: fixed;
+  left: 0;right: 0;bottom: 0;
+  background-color: #c12926;
+  box-shadow: 0 -1px 10px 0 #333;
+  .footItem{
+    flex: auto;text-align: center;height: 48px;
+    a{
+      display: inline-block;color: #ffd80e;height: 100%;width: 100%;
+      &.active{color: #c12926;background-color: #ffd80e}
+      i{
+        font-size: 20px;
+      }
+      p{font-size: 12px;margin-top: -5px}
+    }
+  }
+}
+.modal{
+  display: none;
+  z-index: 60;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  margin: 0 0 0 -40vw;
+  p{line-height: 40px;}
+  .modalHead{
+    p{font-size: 20px;}
+    color: #fff;font-weight: 600;text-align: center;
+  }
+  .modalBody{
+    padding: 10px 0;
+  }
+}
+.telM{
+  height: 180px;margin-top: -90px;
+  .telHead{background-color: #E4393C;}
+  .telBody{background-color: #fff;
+    p{
+      margin:0 20px;
+      font-size: 12px;
+      &:not(:last-child){border-bottom: 1px solid #f5f5f5;}
+      i{font-size: 18px;margin: 10px;padding:0 20px 0 0;border-right: 1px solid #f16e50}
+      a{color: #333}
+    }
+  }
+}
+.joinM{
+  display: none;
+  height: 459px;margin-top: -459/2px;
+  .joinHead{
+    background-color: #ff2e4d;
+  }
+  .joinBody{background-color: #fff;padding:20px;
+    p{
+
+      &.count{text-align: center;
+        input{width: 30%}
+        i{
+          padding: 0;
+          background-color: #565656;
+          color: #fff;
+          border-radius: 50%;
+        }
+      }
+
+      text-align: left;
+      select{
+        width: 100%;height: 30px;line-height: 30px;border-color: rgb(169, 169, 169);
+      }
+      i{
+        vertical-align: middle;
+        font-size: 20px;
+        background-color: #ff2e4d;color: #ffd80e;padding: 5px;
+      }
+      input{
+        &::-webkit-input-placeholder {
+          color: #ff2e4d;
+        }
+        &:-ms-input-placeholder{
+          color: #ff2e4d;
+        }
+        border: 0;
+        width: 84%;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;background-color: #f5f5f5;
+      }
+    }
+  }
+  .joinFoot{
+    padding: 5px 0;background-color: #ff2e4d;
+    p{
+      text-align: center;
+      //color: #fff;padding: 0 10px;
+      a{
+        //margin-top: 5px;
+        display: inline-block;color: #565656;
+        width: 80%;
+        height: 30px;
+        line-height: 30px;
+        background-color: #ffd80e;
+        font-size: 14px;font-weight: 600;
+        border-radius: 15px;
+      }
+    }
+
+  }
+}
+/*付款方式*/
+.paylist{
+  display: none;
+  z-index: 60;background-color: #fff;
+  position: fixed;
+  left: 0;right: 0;bottom: 0;
+  height: 40vh;
+  h2{font-size: 20px;text-align: center;border-bottom: 1px solid #f5f5f5;margin-bottom: 10px}
+  dl{
+    dt{
+      height: 40px;
+      line-height:40px;
+      margin: 0 20px;
+      &:not(:last-child){
+        border-bottom: 1px solid #f5f5f5;
+      }
+
+    }
+    ul{
+      display: none;
+      background-color: #f5f5f5;
+      li{
+        text-align: center;
+        color: #666;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        margin: 0 20px;
+        :not(:last-child){
+          border-bottom: 1px solid #fff;
+        }
+        p{
+          overflow: hidden;
+          span{
+            width: 38%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:first-child{
+              text-align: left;width: 20%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  a{
+     display: inline-block;
+     width: 100%;
+     color: #333;
+     font-size: 16px;
+     i{
+       margin: 0 5px;
+       font-size: 20px;vertical-align: middle;
+     }
+   }
+  .payWay{
+    border-top: 10px solid #f5f5f5;
+    padding: 0 20px;
+    }
+}
+
+.sideBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20%;
+  z-index: 40;
+  p {
+    //width: 26px;
+    width: 13px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 10px;
+    opacity: .6;
+    a {
+      display: inline-block;
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
+.hisM{
+  z-index: 70;
+  height: 500px;
+  margin-top: -250px;
+  .hisHead {
+    background-color: #ff2e4d;
+  }
+  .hisBody{
+    background-color: #fff;padding: 10px 20px;
+    min-height: 300px;
+    max-height: 410px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    li{
+      line-height: 30px;
+      &:not(:last-child){
+        border-bottom: 1px solid #f5f5f5;
+      }
+      span{
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:first-child{
+          width:55%;
+        }
+        &:last-child{
+          width: 40%;
+          color: #999;
+        }
+      }
+    }
+  }
+  .hisFoot {
+    padding: 5px 0;
+    background-color: #ff2e4d;
+    p {
+      text-align: center;
+      a {
+        display: inline-block;
+        color: #565656;
+        width: 80%;
+        height: 30px;
+        line-height: 30px;
+        background-color: #ffd80e;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 15px;
+      }
+    }
+
+  }
+}
+.tiM {
+  z-index: 70;
+  display: none;
+  height: 170px;
+  margin-top: -170/2px;
+  .tiHead {
+    background-color: #ff2e4d;
+  }
+  .tiBody {
+    background-color: #fff;
+    padding: 20px;
+    p {
+      text-align: left;
+      i {
+        vertical-align: middle;
+        font-size: 20px;
+        background-color: #ff2e4d;
+        color: #ffd80e;
+        padding: 5px;
+      }
+      input {
+        &::-webkit-input-placeholder {
+          color: #ff2e4d;
+        }
+        &:-ms-input-placeholder {
+          color: #ff2e4d;
+        }
+        border: 0;
+        width: 84%;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+  .tiFoot {
+    padding: 5px 0;
+    background-color: #ff2e4d;
+    p {
+      text-align: center;
+      a {
+        display: inline-block;
+        color: #565656;
+        width: 80%;
+        height: 30px;
+        line-height: 30px;
+        background-color: #ffd80e;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 15px;
+      }
+    }
+
+  }
+}
+.ret{
+  color: #E4393C;
+}
+.gart{color: #999;font-size: 12px;}
+.gret{color: #62b900}
+.orgt{color: #ff6600}
